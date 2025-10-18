@@ -16,19 +16,19 @@ This repository contains the solution for Kaiburr Assessment Task 3, which invol
 
 ## 2. Installation and Start-up
 
-** 1. Clone the Repository:
+### 1. Clone the Repository:
    
  ```bash
  git clone https://github.com/chandanboyina/Kaiburr-Task-3
  ```
 
-** 2. Installation Dependencies
+ ###2. Installation Dependencies
 
  ```bash
  npm install
  ```
 
-** 3. Run the Applications
+### 3. Run the Applications
 
  ```bash
  npm run dev
@@ -39,7 +39,7 @@ The application will open in your browser, typically at http://localhost:5173
 
 The application is designed as a responsive Taskboard with a custom header and two main sections: a central form and a task table. All core CRUD and execution features are available, as required.
 
-** A. Create Records (Task Form)
+### A. Create Records (Task Form)
 
 Uses an attractive, responsive form built with Ant Design to submit a new task to the backend's PUT /tasks endpoint.
 
@@ -47,19 +47,19 @@ Uses an attractive, responsive form built with Ant Design to submit a new task t
 
 ![Create](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/form%20create2.jpeg)
 
-** B. Show Record
+### B. Show Record
 
 The table loads all existing tasks on startup
 
 ![Show](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/Show%20records.jpeg)
 
-** C.Search Task
+### C.Search Task
 
 The search bar filters tasks by matching text against the 'Name' field, using the backend's GET /tasks?name= endpoint.
 
 ![Search](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/search%20task.jpeg)
 
-** D. Delete Task
+### D. Delete Task
 
 The 'Delete' button in the 'Actions' column removes a task via the DELETE /tasks/{id} endpoint.
 Here Task with "id" 131 was Deleted.
@@ -68,13 +68,13 @@ Here Task with "id" 131 was Deleted.
 
 ![Delete](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/delete2.jpeg)
 
-** E. Run or Execute Task
+### E. Run or Execute Task
 
 The 'Run' button calls the backend's PUT /tasks/{id}/execute endpoint.
 
 ![Run](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/run%20task.jpeg)
 
-** F. Task Output
+### F. Task Output
 
 The 'Output' button opens an accessible modal window to display the full history of taskExecutions for that record.
 
