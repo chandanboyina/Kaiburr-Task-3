@@ -1,0 +1,29 @@
+# .github/workflows/frontend-ci.yml
+name: React Frontend CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm' # Caches node modules for faster builds
+
+      - name: Install Dependencies
+        run: npm install
+
+      # 1. Code Build Step (CI)
+      - name: Build Frontend Application
+        run: npm run build
+        # This step compiles the TypeScript/React code into static HTML/CSS/JS assets.
