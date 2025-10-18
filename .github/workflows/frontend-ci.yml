@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: 18
           cache: 'npm' # Caches node modules for faster builds
+          cache-dependency-path: 'kaiburr-frontend/package-lock.json'
 
       - name: Install Dependencies
         run: npm install
