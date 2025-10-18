@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Stalinist+One&display=swap');
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+/*.task-form-card {*/
+/*    !* Card Appearance *!*/
+/*    background-color: #ffffff;*/
+/*    padding: 30px; !* More padding for spacious look *!*/
+/*    border-radius: 12px; !* Smooth, prominent border radius *!*/
+/*    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); !* Soft shadow for depth *!*/
+/*    border: 1px solid #e0e0e0; !* Subtle border *!*/
+/*    max-width: 600px; !* Limits the width for better readability *!*/
+/*    margin: 20px auto; !* Centers the form beautifully *!*/
+/*}*/
+
+/*!* Enhancing input and textarea focus state *!*/
+/*.ant-input:focus, .ant-input-focused,*/
+/*.ant-input-affix-wrapper-focused, .ant-input-affix-wrapper:focus-within {*/
+/*    border-color: #1890ff !important; !* Ant Design Primary Blue on focus *!*/
+/*    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2) !important; !* Subtle glow effect *!*/
+/*}*/
+
+/*!* Styling for the Create Task Button *!*/
+/*.ant-form-item-control-input-content button {*/
+/*    width: 100%; !* Make the button full-width *!*/
+/*    height: 40px;*/
+/*    font-size: 16px;*/
+/*    border-radius: 8px; !* Match form card radius *!*/
+/*    transition: background-color 0.3s ease, transform 0.2s ease;*/
+/*}*/
+
+/*.ant-form-item-control-input-content button:hover {*/
+/*    transform: translateY(-2px); !* Slight lift on hover *!*/
+/*}*/
+
+/*!* ------------------------------------ *!*/
+/*!* Responsive Design (For smaller screens) *!*/
+/*!* ------------------------------------ *!*/
+/*@media (max-width: 768px) {*/
+/*    !* Reduce padding and center form on small screens *!*/
+/*    .ant-layout-content {*/
+/*        padding: 15px;*/
+/*    }*/
+
+/*    .task-form-card {*/
+/*        margin: 15px 10px;*/
+/*        padding: 20px;*/
+/*        border-radius: 8px; !* Slightly smaller radius on small devices *!*/
+/*    }*/
+/*}*/
+
+/*!* --- Header and Logo Styling --- *!*/
+
+/*!* Ensures the header background is white and removes default padding/color *!*/
+/*.ant-layout-header.app-header-custom {*/
+/*    background-color: #fff;*/
+/*    height: 80px; !* Give space for the logo *!*/
+/*    line-height: 80px;*/
+/*    padding: 0 24px;*/
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); !* Soft shadow for a premium feel *!*/
+/*}*/
+
+/*.header-content {*/
+/*    display: flex;*/
+/*    align-items: center; !* Vertically center the logo and text *!*/
+/*    max-width: 1200px; !* Max width for content centering *!*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.header-logo {*/
+/*    height: 40px; !* Standard logo height *!*/
+/*    margin-right: 15px; !* Space between logo and text *!*/
+/*    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.1)); !* Subtle effect on logo *!*/
+/*}*/
+
+/*.header-title {*/
+/*    font-size: 30px;*/
+/*    font-weight: 700;*/
+/*    color: #333; !* Darker, professional text color *!*/
+/*    letter-spacing: 0.5px;*/
+/*    margin: 0;*/
+/*}*/
+
+/*!* --- Task Form Card Wrapper --- *!*/
+
+/*!* Adjust the main content container to align with the new design *!*/
+/*.task-form-card-container {*/
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
+/*    padding: 24px;*/
+/*}*/
+
+/* Ensure the body and root container cover the full height */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+/* --- Header and Logo Styling (from previous step) --- */
+
+.ant-layout-header.app-header-custom {
+    background-color: #fff;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin-top: 15px;
+}
+
+.header-logo {
+    height: 40px;
+    margin-right: 15px;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.1));
+}
+
+.header-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* --- Attractive Title Styling (TaskBoard) --- */
+
+.main-title-container {
+    text-align: center;
+    padding: 3px 0 15px; /* Space above and below the title */
+}
+
+.main-title-container h2 {
+    /* Impressive Font Styling */
+    font-size: 70px;
+    font-weight: 40;
+    color: #4b0082; /* Deep violet color (Kaiburr's color) */
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+    font-family: "Rubik Bubbles", system-ui; /* Use a modern, attractive font (requires import) */
+}
+
+/* --- Task Form Card Styling (Background Image) --- */
+
+.task-form-card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* Apply background image to the form section wrapper */
+.form-section-wrapper {
+    /* Placeholder: Replace with your actual background image path */
+    background-image: url('./assets/Gemini_Generated_Image_bg.png'); /* You need to add this image! */
+    background-size: cover;
+    background-position: center;
+    padding: 40px; /* Increased padding */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+/* Ensure the form content is readable on the background image */
+.task-form-card {
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background for readability */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Limits the width of the form itself */
+    margin: 0 auto; /* Centers the form over the background */
+
+
+}
+
+/* --- Task Table Section (Impressive Design) --- */
+
+.tasks-table-section {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Stronger shadow to make it stand out */
+    border: 1px solid #d9d9d9;
+}
+
+/* Enhance Ant Design Table Header */
+.ant-table-thead > tr > th {
+    background-color: #4b0082 !important; /* Deep violet background */
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Add slight hover effect to table rows */
+.ant-table-row:hover {
+    background-color: #f3e5f5 !important; /* Very light purple hover */
+}
