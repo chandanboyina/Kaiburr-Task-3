@@ -21,12 +21,22 @@ jobs:
           cache: 'npm' # Caches node modules for faster builds
           cache-dependency-path: 'kaiburr-frontend/package-lock.json'
 
-      - name: Install Dependencies
-        run: npm install
-        working-directory: kaiburr-frontend
-
-      # 1. Code Build Step (CI)
-      - name: Build Frontend Application
-        run: npm run build
-        working-directory: kaiburr-frontend
+#      - name: Install Dependencies
+#        run: npm install
+#        working-directory: kaiburr-frontend
+#
+#      # 1. Code Build Step (CI)
+#      - name: Build Frontend Application
+#        run: npm run build
+#        working-directory: kaiburr-frontend
         # This step compiles the TypeScript/React code into static HTML/CSS/JS assets.
+      - name: Change to Frontend Directory
+        run: cd kaiburr-frontend
+
+      - name: Install Dependencies
+      # The 'cd' command in the previous step persists for this one
+        run: npm install
+
+      - name: Build Frontend Application
+      # The 'cd' command persists here as well
+        run: npm run build
