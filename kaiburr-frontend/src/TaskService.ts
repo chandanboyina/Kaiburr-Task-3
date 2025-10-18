@@ -8,7 +8,7 @@ export const getAllTasks = async () => {
     return response.data;
 };
 
-export const getTaskById = async (id: string) => {
+export const findTaskById = async (id: string) => {
     const response = await axios.get(`${API_URL}?id=${id}`);
     return response.data;
 };
