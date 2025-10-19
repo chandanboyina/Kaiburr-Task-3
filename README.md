@@ -59,6 +59,10 @@ The search bar filters tasks by matching text against the 'Name' field, using th
 
 ![Search](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/search%20task.jpeg)
 
+The search bar filters tasks by matching text against the 'Id' field, using the backend's GET /tasks?id= endpoint.
+
+![searchbyid](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/searchtaskbyidt3.jpeg)
+
 ### D. Delete Task
 
 The 'Delete' button in the 'Actions' column removes a task via the DELETE /tasks/{id} endpoint.
