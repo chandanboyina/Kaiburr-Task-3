@@ -1,0 +1,34 @@
+# .github/workflows/frontend-ci.yml
+name: React Frontend CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+          # CRITICAL FIX 1: Point the cache path to the lock file inside the subdirectory
+          cache-dependency-path: 'kaiburr-frontend/package-lock.json' 
+
+      - name: Install Dependencies
+        run: npm ci
+        # CRITICAL FIX 2: Explicitly run npm ci inside the correct folder
+        working-directory: kaiburr-frontend 
+
+      # 1. Code Build Step (CI)
+      - name: Build Frontend Application
+        run: npm run build
+        # CRITICAL FIX 3: Explicitly run npm run build inside the correct folder
+        working-directory: kaiburr-frontend
