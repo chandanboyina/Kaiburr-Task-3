@@ -62,23 +62,23 @@ The search bar filters tasks by matching text against the 'Name' field, using th
 ### D. Delete Task
 
 The 'Delete' button in the 'Actions' column removes a task via the DELETE /tasks/{id} endpoint.
-Here Task with "id" 131 was Deleted.
+Here Task with "id" 3 was Deleted.
 
-![Delete](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/delete1.png)
+![Delete](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/t3delete1.png)
 
-![Delete](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/delete2.jpeg)
+![Delete](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/t3delete2.png)
 
 ### E. Run or Execute Task
 
 The 'Run' button calls the backend's PUT /tasks/{id}/execute endpoint.
 
-![Run](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/run%20task.jpeg)
+![Run](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/t3run.png)
 
 ### F. Task Output
 
 The 'Output' button opens an accessible modal window to display the full history of taskExecutions for that record.
 
-![Output](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/output.jpeg)
+![Output](https://github.com/chandanboyina/Kaiburr-Task-3/blob/main/t4output.png)
 
 
 
